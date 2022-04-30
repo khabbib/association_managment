@@ -86,8 +86,6 @@ app.delete("/lists/:id", async (req, res)=>{
 // send mail 
 app.post("/email", (req, res)=>{
     try {
-        
-        
         const outputmail = `
             <p>Du har ny bokat tid!</p>
             <h3>Hej ;)</p></h3>
@@ -135,9 +133,6 @@ app.post("/email", (req, res)=>{
         console.log(error.message)
     }
 })
-
-
-
 
 
 // server 
